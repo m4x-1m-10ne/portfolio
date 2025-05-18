@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo" onclick="scrollToTop()"></div>
+            <div class="nav-buttons">
+                <button class="parallelogram-btn" onclick="scrollToSection('about-section')">
+                    <div class="btn-content">
+                        <div class="btn-icon user-icon"></div>
+                        Обо мне
+                        <span class="arrow">></span>
+                    </div>
+                </button>
+                <button class="parallelogram-btn" onclick="scrollToSection('works-section')">
+                    <div class="btn-content">
+                        <div class="btn-icon briefcase-icon"></div>
+                        Мои работы
+                        <span class="arrow">></span>
+                    </div>
+                </button>
+                <button class="parallelogram-btn" onclick="scrollToSection('footer')">
+                    <div class="btn-content">
+                        <div class="btn-icon envelope-icon"></div>
+                        Связь со мной
+                        <span class="arrow">></span>
+                    </div>
+                </button>
+            </div>
+            <div style="width: 150px;"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="black-block">
+            <div class="black-block-content">
+                <div class="left-section">
+                    <img src="img/profile.png" alt="Фотка" class="profile-image">
+                    <div class="text-content">
+                        <h1>Привет, меня зовут Макс</h1>
+                        <p>Я разрабатываю сайты, ux/iu дизайн</p>
+                        <p style="color: #0C0C0C">Вот, что хочу Вам показать...</p>
+                        <img src="img/cursor.png" alt="курсор" style="margin-top: 15px; margin-left: 350px; max-width: 100%;">
+                    </div>
+                </div>
+                <div class="right-image-container">
+                    <img src="img/photo.png" alt="Рабочее место" class="right-image">
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-section" id="about-section">
+            <div class="about-sidebar">
+                <div class="about-title-left">
+                    <div class="about-title-left-content">
+                        <div class="about-title-left-icon"></div>
+                        Обо мне<span class="arrow">></span>
+                    </div>
+                </div>
+                <button class="sidebar-btn active" onclick="showContent('education')">
+                    <div class="sidebar-btn-content">
+                        Образование
+                    </div>
+                </button>
+                <button class="sidebar-btn" onclick="showContent('skills')">
+                    <div class="sidebar-btn-content">
+                        Навыки
+                    </div>
+                </button>
+                <button class="sidebar-btn" onclick="showContent('experience')">
+                    <div class="sidebar-btn-content">
+                        Опыт работы
+                    </div>
+                </button>
+            </div>
+            
+            <div class="about-content">
+                <div id="education" class="content-block active">
+                    <h2>Моё образование</h2>
+                    <div class="education-blocks">
+                        <div class="education-block">
+                            <div class="education-block-content">
+                                <h3>Основное общее</h3>
+                                <p><a href="https://sh14-vologda-r19.gosweb.gosuslugi.ru/" target="_blank">Муниципальное общеобразовательное учреждение «Средняя общеобразовательная школа № 14»</a>, 2014-2023</p>
+                            </div>
+                        </div>
+                        <div class="education-block">
+                            <div class="education-block-content">
+                                <h3>Среднее профессиональное</h3>
+                                <p><a href="https://vksit.ru/#/" target="_blank">Вологодский колледж связи и информационных технологий</a>, 2023-2027</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="skills" class="content-block">
+                    <h2>Мои навыки</h2>
+                    <div class="skills-blocks">
+                        <div class="skill-block">
+                            <div class="skill-block-content">
+                                <img src="img/html.png" alt="HTML, CSS, JS" style="width: 175px; height: 100%">
+                                <p>HTML5, CSS, JS</p>
+                            </div>
+                        </div>
+                        <div class="skill-block">
+                            <div class="skill-block-content">
+                                <img src="img/python.png" alt="Python">
+                                <p>Python</p>
+                            </div>
+                        </div>
+                        <div class="skill-block">
+                            <div class="skill-block-content">
+                                <img src="img/figma.png" alt="Figma">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                        <div class="skill-block">
+                            <div class="skill-block-content">
+                                <img src="img/photoshop.png" alt="Photoshop">
+                                <p>Photoshop</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="experience" class="content-block">
+                    <h2>Мой опыт работы</h2>
+                    <div class="experience-block">
+                        <div class="experience-block-content">
+                            <h3>Общий стаж в веб-разработке</h3>
+                            <div class="experience-years">4 года</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="works-section" id="works-section">
+            <div class="works-sidebar">
+                <div class="works-title-left">
+                    <div class="works-title-left-content">
+                        <div class="works-title-left-icon"></div>
+                        Мои работы<span class="arrow">></span>
+                    </div>
+                </div>
+                <button class="sidebar-btn active" onclick="showWorksContent('all-projects')">
+                    <div class="sidebar-btn-content">
+                        Все проекты
+                    </div>
+                </button>
+            </div>
+        
+        <div class="works-content">
+            <div id="all-projects" class="content-block active">
+                <h2>Мои проекты</h2>
+                <div class="projects-blocks">
+                    <div class="project-block-wrapper">
+                    <div class="project-block" onclick="window.open('https://www.figma.com/design/qQlktvG2HBqflv1GqPAUvY/cool-job?node-id=0-1&t=figy2lg8hY4c7GRn-1', '_blank')">
+                        <img src="img/cool-job-preview.jpg" alt="Cool Job" class="project-image">
+                        <div class="project-content">
+                            <div class="magnifier-icon"></div>
+                            <h3 class="project-title">Cool Job</h3>
+                            <p class="project-tech">Figma Design</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="project-block-wrapper">
+                    <div class="project-block" onclick="window.open('https://www.figma.com/design/JoXSwKdqb0yJMYvkbxmi1u/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-%D0%BC%D0%B0%D0%BA%D0%B5%D1%82-%D1%81%D0%B0%D0%B9%D1%82%D0%B0?node-id=0-1&t=6I38XwdOOi0OMh7Q-1', '_blank')">
+                        <img src="img/lifehacks-preview.jpg" alt="Учебные лайфхаки" class="project-image">
+                        <div class="project-content">
+                            <div class="magnifier-icon"></div>
+                            <h3 class="project-title">Учебные лайфхаки</h3>
+                            <p class="project-tech">Figma Design</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="project-block-wrapper">
+                    <div class="project-block" onclick="window.open('https://vk.com/away.php?to=https%3A%2F%2Fm4x-1m-10ne.github.io%2FCozy_Cottage%2F&utf=1', '_blank')">
+                        <img src="img/hotel-preview.jpg" alt="Мини-отель" class="project-image">
+                        <div class="project-content">
+                            <div class="magnifier-icon"></div>
+                            <h3 class="project-title">Мини-отель</h3>
+                            <p class="project-tech">HTML/CSS/JS</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="project-block-wrapper">
+                    <div class="project-block" onclick="window.open('https://www.figma.com/design/hH9YwyjMMRcTFyKTTlKCOC/%D0%92%D0%BE%D0%BB%D0%B3%D0%B0-IT?node-id=0-1&t=eJnWLoWvh9KemiAn-1')">
+                        <img src="img/volga-it-preview.jpg" alt="Волга-IT" class="project-image">
+                        <div class="project-content">
+                            <div class="magnifier-icon"></div>
+                            <h3 class="project-title">Волга-IT</h3>
+                            <p class="project-tech">Figma Design</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <div class="footer-title">
+                <div class="footer-title-content">
+                    <div class="footer-title-icon"></div>
+                    Связь со мной<span class="arrow">></span>
+                </div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-block">
+                    <ul class="footer-contacts">
+                        <li>
+                            <a href="#" onclick="copyToClipboard('p4savchenko@yandex.ru', event)">
+                                <div class="contact-icon email-icon"></div>
+                                Почта
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/id436072015" target="_blank">
+                                <div class="contact-icon vk-icon"></div>
+                                Вконтакте
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/de_a_d_max" target="_blank">
+                                <div class="contact-icon telegram-icon"></div>
+                                Telegram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <ul class="footer-contacts">
+                        <li>
+                            <a href="https://pin.it/4TrG9BUn8" target="_blank">
+                                <div class="contact-icon pinterest-icon"></div>
+                                Pinterest
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/xDVUvqXr" target="_blank">
+                                <div class="contact-icon discord-icon"></div>
+                                Discord
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/qr/3MHZUPUHDWGYA1" target="_blank">
+                                <div class="contact-icon whatsapp-icon"></div>
+                                WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="scroll-down-btn" onclick="scrollToBottom()">
+        <i class="fas fa-arrow-down"></i>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', function(e) {
+                cursor.style.left = (e.pageX - 15) + 'px';
+                cursor.style.top = (e.pageY - 15) + 'px';
+            });
+            
+            showContent('education');
+            
+            showWorksContent('all-projects');
+        });
+
+        function showContent(contentId) {
+            document.querySelectorAll('.about-content .content-block').forEach(block => {
+                block.classList.remove('active');
+            });
+            
+            document.getElementById(contentId).classList.add('active');
+            
+            document.querySelectorAll('.about-sidebar .sidebar-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+        
+        function showWorksContent(contentId) {
+            document.querySelectorAll('.works-content .content-block').forEach(block => {
+                block.classList.remove('active');
+            });
+            
+            document.getElementById(contentId).classList.add('active');
+            
+            document.querySelectorAll('.works-sidebar .sidebar-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+
+                function copyToClipboard(text, event) {
+            event.preventDefault();
+            
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            document.body.appendChild(textarea);
+            textarea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                const message = successful ? 'Email скопирован в буфер обмена!' : 'Не удалось скопировать email';
+                showTooltip(event.target, message);
+            } catch (err) {
+                showTooltip(event.target, 'Ошибка при копировании: ' + err);
+            }
+            
+            document.body.removeChild(textarea);
+        }
+
+        function showTooltip(element, message) {
+            const tooltip = document.createElement('div');
+            tooltip.textContent = message;
+            tooltip.style.position = 'fixed';
+            tooltip.style.backgroundColor = '#000';
+            tooltip.style.color = '#fff';
+            tooltip.style.padding = '8px 12px';
+            tooltip.style.borderRadius = '4px';
+            tooltip.style.zIndex = '1000';
+            tooltip.style.fontFamily = "'Press Start 2P', cursive";
+            tooltip.style.fontSize = '10px';
+            tooltip.style.animation = 'fadeInOut 2.5s forwards';
+            
+            const rect = element.getBoundingClientRect();
+            tooltip.style.left = (rect.left + window.scrollX) + 'px';
+            tooltip.style.top = (rect.top + window.scrollY - 30) + 'px';
+            
+            document.body.appendChild(tooltip);
+            
+            setTimeout(() => {
+                document.body.removeChild(tooltip);
+            }, 2500);
+        }
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInOut {
+                0% { opacity: 0; transform: translateY(10px); }
+                20% { opacity: 1; transform: translateY(0); }
+                80% { opacity: 1; transform: translateY(0); }
+                100% { opacity: 0; transform: translateY(-10px); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
